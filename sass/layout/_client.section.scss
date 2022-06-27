@@ -1,9 +1,9 @@
-.client {
+.clients {
     display: flex;
     align-items: center;
 }
 
-.client__list:not(:last-child) {
+.client__item:not(:last-child) {
     margin-right: 30px;
 }
 

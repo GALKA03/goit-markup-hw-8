@@ -25,9 +25,11 @@
 
 .wedoing__item {
     position: relative;
-    flex-basis: calc((100% - 90px) /3);
 
  &:not(:last-child) {
     margin-right: 30px;
 }   
+}
+.title-wite{
+    color: var(--bacground-font-waight);
 }
