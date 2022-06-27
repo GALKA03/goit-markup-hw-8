@@ -1,0 +1,53 @@
+.contacts {
+    display: flex;
+    align-items: stretch;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.contakts__icons {
+    margin-right: 10px;
+    fill: currentColor;
+     display: flex;
+    align-items: center;
+   
+}
+.contacts__item{
+    display: flex; 
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: var(--primery-text-color);
+
+    transition-property: color, filter;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+&:hover,
+&:focus {
+    color: var(--color-logo);
+    fill: var(--color-logo);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+}
+.contacts__linkmale{
+display: flex;
+align-items: center;
+}
+.contacts__linkphon{
+display: flex;
+align-items: center;
+}
+.conteiner__contacts{
+    display: flex;
+margin-left: auto;
+}
+.contacts__use{
+    display: flex;
+        align-items: center;
+}

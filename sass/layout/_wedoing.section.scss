@@ -1,0 +1,33 @@
+.section__nopuddingtop {
+    display: block;
+    padding-top: 0;
+}
+
+.wedoing__box {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    flex-basis: calc((100% - 90px) /3);
+}
+
+
+.wedoing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wedoing__item {
+    position: relative;
+    flex-basis: calc((100% - 90px) /3);
+
+ &:not(:last-child) {
+    margin-right: 30px;
+}   
+}

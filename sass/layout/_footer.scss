@@ -1,0 +1,53 @@
+.footer {
+    display: flex;
+    padding: 60px 0;
+    background-color: var(--color-bacgraund-hovfut);
+    color: var(--bacground-font-waight);
+}
+
+.footer__webstudio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--bacground-font-waight);
+}
+
+.footer__address {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.footer__web {
+
+    color: var(--color-logo);
+}
+
+.footer__nav:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.futer__maps {
+    color: var(--bacground-font-waight);
+}
+
+.footer__mail {
+    color: var(--footer-mail-telefon);
+}
+
+.footer__tel {
+
+    color: var(--footer-mail-telefon);
+}
+
+.conteinerdop {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}

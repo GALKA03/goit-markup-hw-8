@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './utils/hidden';
+
+@import './base/base';
+@import './base/conteiner';
+@import './base/sekcion';
+
+@import './components/button';
+@import './components/logo.scss';
+@import './components/nav.scss';
+@import './components/site.tel.meil.scss';
+@import './components/footer.social';
+@import './components/form.footer.scss';
+@import './components/backdrop.scss';
+@import './components/modal.form.scss';
+@import './components/modal.scss';
+
+
+@import './layout/heder.scss';
+@import './layout/hero.scss';
+@import './layout/idea.section';
+@import './layout/wedoing.section';
+@import './layout/team.section';
+@import './layout/client.section.scss';
+@import './layout/footer.scss';
+@import './layout/portfolio.but.list';
+@import './layout/project.cards.scss'
+
+
+
