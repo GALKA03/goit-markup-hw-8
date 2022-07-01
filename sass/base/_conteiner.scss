@@ -1,15 +1,34 @@
-.conteiner {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.conteiner{
+    width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;  
 }
 
+@media  screen and (min-width:480px) 
+{
+ .conteiner {
+    width: 480px;
+    margin: 0 auto;
+ }   
+}
+@media screen and (min-width:768px){
+.conteiner {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px){
+.conteiner {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+//
 /* портфолилио??*/
-.conteiner-main-portfolio {
+/*.conteiner-main-portfolio {
     width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+}*/
