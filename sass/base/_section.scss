@@ -1,7 +1,17 @@
-/*.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}/*удалила рядом с хиро*/
+.section {
+    padding-top: 60px;
+        padding-bottom: 60px;}
+
+     .section__titlemain {
+    margin-bottom: 30px;
+    font-weight: 700;
+        font-size: 28px;
+        line-height:1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}   
+
 /*
 .section__titlemain {
     margin-bottom: 50px;
@@ -28,3 +38,31 @@
         letter-spacing: 0.03em;
         color: #757575; 
 }*/
+
+@media screen and (max-width:780px){
+    .section__title{  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);}
+.section__text{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+}
+@media screen and (min-width:1200px){
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+}

@@ -72,16 +72,16 @@
     </li>
    </ul>
    <ul class="mobil-social list">
-    <li class="mobil-social__link">
+    <li class="mobil-social__item">
         <a class="mobil-social__link link" href="">Instagram</a>
     </li>
     <li  class="mobil-social__item">
         <a class="mobil-social__link link" href="">Twitter</a>
     </li>
-    <li class="mobil-social__link">
+    <li class="mobil-social__item">
         <a class="mobil-social__link link" href="">Facebook</a>
     </li>
-    <li class="mobil-social__link">
+    <li class="mobil-social__item">
         <a class="mobil-social__link link" href="">LinkedIn</a>
     </li>
    </ul>
@@ -101,7 +101,7 @@
         <<section class="section">
             <div class="conteiner">
             <h2  class="section-titlemain visually-hidden">черты характера</h2>
-            <ul class="idea-list list">
+            <ul class="idea-list cc list">
                 <li class="idea-list__item">
                       <div class="idea-list__conteiner">
                     <svg class="idea-list__icon" width="70" height="70">
@@ -110,7 +110,7 @@
                     </svg>
                     </div>
                     <h3 class="section__title">Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="section__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="idea-list__item">
                     <div class="idea-list__conteiner">
@@ -120,7 +120,7 @@
                     </svg>
                 </div>
                     <h3 class="section__title">Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="section__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 
                 </li>
                 <li class="idea-list__item">
@@ -132,7 +132,7 @@
                     </svg>
                 </div>
                     <h3 class="section__title">Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="section__text" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 
                 </li>
                 <li class="idea-list__item">
@@ -143,14 +143,14 @@
                     </svg>
                 </div>  
                 <h3 class="section__title">Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="section__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                
                 </li>
             </ul>
         </div>
         </section>
         <!--чем мы занимаемся секция -->
-    <!-- <section class="section section__nopuddingtop">
+     <!--<section class="section section__nopuddingtop">
             <div class="conteiner">
             <h2 class="section__titlemain ">Чем мы занимаемся</h2> 
              
@@ -174,12 +174,29 @@
         </div>
         </section>
         <!--наша команда секция 4 фотки 2 -->
-        <!--<section class="section section__background ">
+        <section class="section team__bacground ">
             <div class="conteiner">
             <h2 class="section__titlemain">Наша команда</h2>
 
             <ul class="team list">
-                <li class="team__card"><img class="img" src="./images/img.jpg" alt="мужчина в очках с бородой очень доволен" width="270" height="260">
+                <li class="team__card">
+                   <picture class="img">
+                     <source
+                    srcset="./images/team/man.webp 1x"
+                    src="./images/team/man.webp" 
+                    alt="мужчина в очках с бородой очень доволен" 
+media="(min-width: 370px)"
+                    type="image/webp"
+                    > 
+                    <source
+                    srcset="./images/team/man.jpg 1x, ./images/team/man@2x.jpg 2x"
+                    src="./images/team/man.jpg" 
+                    alt="мужчина в очках с бородой очень доволен" 
+                    width="270" height="260"
+                    type="image/webp"
+                    >
+                  
+                 </picture>
                     <div class="team__meta">
                     <h3 class="section__title team__title-center">Игорь Демьяненко</h3>
                     <p lang="en" class="team__prof">Product Designer</p>
@@ -215,7 +232,12 @@
                     </ul>
                     </div>
             </li>
-                <li class="team__card"><img class="img" src="./images/img(1).jpg" alt="женщина блондинка в очках улыбается" width="270" height="260">
+                <li class="team__card">
+                    <img class="img" 
+                    srcset="./images/team/women.jpg 1x, ./images/team/women@2x.jpg 2x"
+                    src="./images/team/women.jpg" 
+                    alt="женщина блондинка в очках улыбается" 
+            >
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Ольга Репина</h3>
                    <p lang="en" class="team__prof"> Frontend Developer</p>
@@ -251,8 +273,11 @@
                 </ul>
                 </div>
                 </li>
-                <li class="team__card"><img class="img" src="./images/img(2).jpg" alt="русоволосый мужчина без бороды улыбается" width="270"
-                        height="260">
+                <li class="team__card">
+                    <img class="img"
+                    srcset="./images/team/man2.jpg 1x, ./images/team/man2@2x.jpg"
+                     src="./images/team/man2.jpg" 
+                     alt="русоволосый мужчина без бороды улыбается">
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Николай Тарасов</h3>
                     <p lang="en" class="team__prof">Marketing</p>
@@ -289,8 +314,12 @@
                 
                 </div>
             </li>
-                <li class="team__card"><img class="img" src="./images/img(3).jpg" alt="мужчина брюнет в очках с бородой улыбается,доволен" width="270"
-                        height="260">
+                <li class="team__card">
+                    <img class="img"
+                    srcset="./images/team/man3.jpg 1x, ./images/team/man3@2x.jpg" 
+                    src="./images/team/man3.jpg" 
+                    alt="мужчина брюнет в очках с бородой улыбается,доволен"
+                 >
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Михаил Ермаков</h3>
                     <p lang="en" class="team__prof">UI Designer</p>
@@ -330,7 +359,7 @@
         </div>
         </section>
         <!-- client  -->
-        <!--<section class="section">
+        <<section class="section">
             <div class="conteiner">
             <h2 class="section__titlemain">Постоянные клиенты</h2>
         <ul class="clients list ">
@@ -383,20 +412,20 @@
 </li>
             </ul>
 </div>
-        </section>-->
+        </section>
     </main>
     <!-- Подвал страницы -->
-    <!--<footer class="footer">
-       <div class="conteiner conteinerdop">
-           <div>
+    <<footer class="footer">
+       <div class="conteiner footer-conteiner">
+           <div class="footer-conteiner__contacts">
         <a href="WebStudio" lang="en" class="footer__webstudio link"><span class="footer__web">Web</span>Studio</a>
         <address class="footer__address">
             <ul class="footer__list list ">
-                <li class="footer__nav"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank" rel="noopener nofollow noreferrer"
+                <li class="footer__item"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank" rel="noopener nofollow noreferrer"
                         class="futer__maps link">
                         г.Киев, пр-т Леси Украинки,26</a> </li>
-                <li class="footer__nav"><a href=" mailto:info@devstudio.com" class="footer__mail link">info@devstudio.com</a></li>
-                <li class="footer__nav"><a href="tel:+380961111111" class="footer__tel link">+38 096 111 11 11</a></li>
+                <li class="footer__item"><a href=" mailto:info@devstudio.com" class="footer__mail link">info@devstudio.com</a></li>
+                <li class="footer__item"><a href="tel:+380961111111" class="footer__tel link">+38 096 111 11 11</a></li>
             </ul>
         </address>
     </div>
@@ -438,7 +467,7 @@
 </ul>
 </div>
 <!-- form -->
-<!--<form class="form-footer" >
+<<form class="form-footer" >
 <p class="  social-end__title"> Подпишитесь на рассылку</p>
 <div class="form-footer__conteiner" role="group">
 <label for="email-footer" class="form-footer__lable"></label>
