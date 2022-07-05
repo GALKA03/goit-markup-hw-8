@@ -20,11 +20,16 @@
 <header class="header">
     <div class="conteiner header__correct ">
         <a href="" class="logo link"><span class="logo__web">Web</span>Studio</a>
+        <button type="button" class="mob-menu-open-btn" data-menu-open>
+            <svg class="mob-menu-open-btn__icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
         <nav class="nav">
             <ul class="nav-list list link">
                 <li class="nav-list__item "><a href="./index.html"
-                        class="nav-list__link  link">Студия</a></li>
-                <li class="nav-list__item "><a href="./portfolio.html" class="nav-list__link nav-list__underline link">Портфолио</a></li>
+                        class="nav-list__link nav-list__underline link">Студия</a></li>
+                <li class="nav-list__item "><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
                 <li class="nav-list__item"><a href="" class="nav-list__link  link">Контакты</a></li>
             </ul>
         </nav>
@@ -48,25 +53,68 @@
         </ul>
 
     </div>
+    <div class="mobile-conteiner" data-menu>
+        <div class="conteiner mobile-conteiner__dop ">
+            <button type="button" class="mobile-conteiner__close-btn " data-menu-close>
+                <svg class="mobile-conteiner__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-kros"></use>
+                </svg>
+            </button>
+            <ul class="mobil-menu list">
+                <li class="mobil-menu__item"><a class="mobil-menu__link link" href="./index.html">Студия</a></li>
+                <li class="mobil-menu__item"><a class="mobil-menu__link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobil-menu__item"><a class="mobil-menu__link link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobil-contacts list">
+                <li class="mobil-contacts__item">
+                    <a class="mobil-contacts__linc-phon link" href="tel:+380961111111">+380961111111</a>
+                </li>
+                <li class="mobil-contacts__item">
+                    <a class="mobil-contacts__linc-maile link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobil-social list">
+                <li class="mobil-social__item">
+                    <a class="mobil-social__link link" href="">Instagram</a>
+                </li>
+                <li class="mobil-social__item">
+                    <a class="mobil-social__link link" href="">Twitter</a>
+                </li>
+                <li class="mobil-social__item">
+                    <a class="mobil-social__link link" href="">Facebook</a>
+                </li>
+                <li class="mobil-social__item">
+                    <a class="mobil-social__link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 <main>
 <section class="section ">   
     <!-- button menu --> 
     <div class="conteiner">
-    <h1 class="visually-hidden">button</h1>
+<!--    <h1 class="visually-hidden">button</h1>
 <ul class="button-list list">
-<li class="button-list__line"><button type="button" class="button-list__stud">Все</button></li>
-<li class="button-list__line"> <button type="button" class="button-list__stud ">Веб-сайты</button></li>
-<li class="button-list__line"><button type="button" class="button-list__stud">Приложения</button></li>
-<li class="button-list__line"><button type="button" class="button-list__stud">Дизайн</button></li>
-<li class="button-list__line"><button type="button" class="button-list__stud">Маркетинг</button></li>
+<li class="button-list__item"><button type="button" class="button-list__btn">Все</button></li>
+<li class="button-list__item"> <button type="button" class="button-list__btn ">Веб-сайты</button></li>
+<li class="button-list__item"><button type="button" class="button-list__btn">Приложения</button></li>
+<li class="button-list__item "><button type="button" class="button-list__btn">Дизайн</button></li>
+<li class="button-list__item"><button type="button" class="button-list__btn">Маркетинг</button></li>
 </ul>
 <!-- progect -->
+
 <ul class="project-cards list">
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/noutkomg.jpg" alt="ноутбук" width="370" height="290"> 
+    <picture class="img">
+        <source srcset="./images/portfolio/komp.webp 1x" media="(min-width: 370px)" type="image/webp">
+    
+        <source srcset="./images/portfolio/komp.jpg 1x, ./images/portfolio/komp@2x.jpg 2x"
+            src="./images/portfolio/komp.jpg" type="image/jpeg">
+        <img src="./images/portfolio/komp.jpg" alt="komp" />
+    </picture>
         <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
     </div>
@@ -77,10 +125,17 @@
 </div>
 </a>
 </li>
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/basketnrw.jpg" alt="баскетбол" width="370" height="290">
+            <picture class="img">
+                <source srcset="./images/portfolio/basket.webp 1x" media="(min-width: 370px)" type="image/webp">
+            
+                <source srcset="./images/portfolio/basket.jpg 1x, ./images/portfolio/basket@2x.jpg 2x" src="./images/portfolio/basket.jpg"
+                    type="image/jpeg">
+                <img src="./images/portfolio/basket.jpg" alt="баскетбол" />
+            </picture>
+            
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -92,10 +147,16 @@
 </div> </a>
 </li>
 
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/seafood.jpg" alt="логотим морской еды" width="370" height="290">
+            <picture class="img">
+                <source srcset="./images/portfolio/seafood.webp 1x" media="(min-width: 370px)" type="image/webp">
+            
+                <source srcset="./images/portfolio/seafood.jpg 1x, ./images/portfolio/seafood@2x.jpg 2x"
+                    src="./images/portfolio/seafood.jpg" type="image/jpeg">
+                <img src="./images/portfolio/seafood.jpg" alt="логотим морской еды" />
+            </picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -106,10 +167,15 @@
 </div></a>
 </li>
 
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/naush.jpg" alt="наушники" width="370" height="290">
+            <picture class="img">
+                <source srcset="./images/portfolio/naush.webp 1x" media="(min-width: 370px)" type="image/webp">
+                <source srcset="./images/portfolio/naush.jpg 1x, ./images/portfolio/naush@2x.jpg 2x"
+                    src="./images/portfolio/naush.jpg" type="image/jpeg">
+                <img src="./images/portfolio/naush.jpg" alt="наушники" />
+            </picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -120,10 +186,15 @@
     <p class="project-cards__text">Маркетинг</p>
 </div> </a>
 </li>
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/korobki.jpg" alt="коробкт картонные" width="370" height="290">
+<picture class="img">
+    <source srcset="./images/portfolio/box.webp 1x" media="(min-width: 370px)" type="image/webp">
+    <source srcset="./images/portfolio/box.jpg 1x, ./images/portfolio/box@2x.jpg 2x"
+        src="./images/portfolio/box.jpg" type="image/jpeg">
+    <img src="./images/portfolio/box.jpg" alt="коробки картонные" />
+</picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -134,10 +205,15 @@
     <p class="project-cards__text">Приложение</p>
 </div></a>
 </li>
-    <li class="project-cards__line">
+    <li class="project-cards__item">
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/monitor.jpg" alt="монитор компьтера" width="370" height="290">
+<picture class="img">
+    <source srcset="./images/portfolio/monitor.webp 1x" media="(min-width: 370px)" type="image/webp">
+    <source srcset="./images/portfolio/monitor.jpg 1x, ./images/portfolio/monitor@2x.jpg 2x" src="./images/portfolio/monitor.jpg"
+        type="image/jpeg">
+    <img src="./images/portfolio/monitor.jpg" alt="монитор компьтера" />
+</picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -148,10 +224,15 @@
     <p class="project-cards__text">Веб-сайт</p>
 </div></a>
 </li>
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/kniga.jpg" alt="книга" width="370" height="290">
+<picture class="img">
+    <source srcset="./images/portfolio/book.webp 1x" media="(min-width: 370px)" type="image/webp">
+    <source srcset="./images/portfolio/book.jpg 1x, ./images/portfolio/book@2x.jpg 2x"
+        src="./images/portfolio/book.jpg" type="image/jpeg">
+    <img src="./images/portfolio/book.jpg" alt="книга" />
+</picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -162,10 +243,15 @@
     <p class="project-cards__text">Дизайн</p>
 </div></a>
 </li>
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img  class="img" src="./images/birka.jpg" alt="бирка" width="370" height="290">
+            <picture class="img">
+                <source srcset="./images/portfolio/lable.webp 1x" media="(min-width: 370px)" type="image/webp">
+                <source srcset="./images/portfolio/lable.jpg 1x, ./images/portfolio/lable@2x.jpg 2x" src="./images/portfolio/lable.jpg"
+                    type="image/jpeg">
+                <img src="./images/portfolio/lable.jpg" alt="lable" />
+            </picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
@@ -176,94 +262,99 @@
     <p class="project-cards__text">Маркетинг</p>
 </div> </a>
 </li>
-    <li class="project-cards__line" >
+    <li class="project-cards__item" >
         <a href="" class="project-cards__link link">
             <div class="project-cards__atop">
-            <img class="img" src="./images/nout.jpg" alt="руки печатают на ноутбуке" width="370" height="290">
+<picture class="img">
+    <source srcset="./images/portfolio/nout.webp 1x" media="(min-width: 370px)" type="image/webp">
+    <source srcset="./images/portfolio/nout.jpg 1x, ./images/portfolio/nout@2x.jpg 2x"
+        src="./images/portfolio/nout.jpg" type="image/jpeg">
+    <img src="./images/portfolio/nout.jpg" alt="nout" />
+</picture>
     <p class="text-hidden"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
         позволит посетителю получить
         исчерпывающие сведения о компании или частном лице.</p>
     </div>
         <div class="project-cards__bottom">
    
-        <h2 lang="en" class="project-section-title">Growing Business</h2>
+        <h2 lang="en" class="project-cards__title">Growing Business</h2>
     <p class="project-cards__text">Приложение</p>
 </div> </a>
 </li>
 </ul>
 </div>
-</section>
+</section>-->
 </main>
 <!-- Подвал страницы -->
-    <footer class="footer">
-        <div class="conteiner conteinerdop">
-            <div>
-                <a href="WebStudio" lang="en" class="footer__webstudio link"><span class="footer__web">Web</span>Studio</a>
-                <address class="footer__address">
-                    <ul class="footer__list list ">
-                        <li class="footer__nav"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank"
-                                rel="noopener nofollow noreferrer" class="futer__maps link">
-                                г.Киев, пр-т Леси Украинки,26</a> </li>
-                        <li class="footer__nav"><a href=" mailto:info@devstudio.com"
-                                class="footer__mail link">info@devstudio.com</a></li>
-                        <li class="footer__nav"><a href="tel:+380961111111" class="footer__tel link">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="social-end">
-                <h3 class="social-end__title">присоединяйтесь</h3>
-                <ul class="social-end__list  list">
-                    <li class="social-end__soc">
-                        <a class="social-end__link" href="">
-                            <svg class="social-end__icon" width="20" height="20">
-                                <use class="social-end__svg" href="./images/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-end__soc">
-                        <a href="" class="social-end__link ">
-                            <svg class="social-end__icon" width="20" height="20">
-                                <use class="social-end__svg " href="./images/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-end__soc">
-                        <a href="" class="social-end__link">
-                            <svg class="social-end__icon" width="20" height="20">
-                                <use class="social-end__svg " href="./images/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-end__soc">
-                        <a href="" class="social-end__link">
-                            <svg class="social-end__icon" width="20" height="20">
-                                <use class="social-end__svg  " href="./images/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
+<footer class="footer">
+    <div class="conteiner footer-conteiner">
+        <div class="footer-conteiner__contacts">
+            <a href="WebStudio" lang="en" class="footer__webstudio link"><span class="footer__web">Web</span>Studio</a>
+            <address class="footer__address">
+                <ul class="footer__list list ">
+                    <li class="footer__item"> <a href="https://goo.gl/maps/JEW9ovbfu2PFGyKFA" target="_blank"
+                            rel="noopener nofollow noreferrer" class="futer__maps link">
+                            г.Киев, пр-т Леси Украинки,26</a> </li>
+                    <li class="footer__item"><a href=" mailto:info@devstudio.com"
+                            class="footer__mail link">info@devstudio.com</a></li>
+                    <li class="footer__item"><a href="tel:+380961111111" class="footer__tel link">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
-            <!-- form -->
-            <form class="form-footer">
-                <p class="  social-end__title"> Подпишитесь на рассылку</p>
-                <div class="form-footer__conteiner" role="group">
-                    <label for="email-footer" class="form-footer__lable"></label>
-                    <input type="email" name="email-footer" id="email-footer" class="form-footer__emeil"
-                        placeholder="E-mail" required>
-                    <button type="submit" class="button form-footer__button">
-                        Подписаться
-                        <svg class="form-footer__icon" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-send"> </use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+            </address>
         </div>
-    </footer>
+        <div class="social-end">
+            <h3 class="social-end__title">присоединяйтесь</h3>
+            <ul class="social-end__list  list">
+                <li class="social-end__soc">
+                    <a class="social-end__link" href="">
+                        <svg class="social-end__icon" width="20" height="20">
+                            <use class="social-end__svg" href="./images/sprite.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-end__soc">
+                    <a href="" class="social-end__link ">
+                        <svg class="social-end__icon" width="20" height="20">
+                            <use class="social-end__svg " href="./images/sprite.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-end__soc">
+                    <a href="" class="social-end__link">
+                        <svg class="social-end__icon" width="20" height="20">
+                            <use class="social-end__svg " href="./images/sprite.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-end__soc">
+                    <a href="" class="social-end__link">
+                        <svg class="social-end__icon" width="20" height="20">
+                            <use class="social-end__svg  " href="./images/sprite.svg#icon-linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- form -->
+        <<form class="form-footer">
+            <p class="  social-end__title"> Подпишитесь на рассылку</p>
+            <div class="form-footer__conteiner" role="group">
+                <label for="email-footer" class="form-footer__lable"></label>
+                <input type="email" name="email-footer" id="email-footer" class="form-footer__emeil"
+                    placeholder="E-mail" required>
+                <button type="submit" class="button form-footer__button">
+                    Подписаться
+                    <svg class="form-footer__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"> </use>
+                    </svg>
+                </button>
+            </div>
+            </form>
+    </div>
+</footer>
  </body>       
         </html>

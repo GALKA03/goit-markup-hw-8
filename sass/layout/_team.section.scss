@@ -13,14 +13,19 @@
 }
 
 @media screen and (min-width:768px){
+.team{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .team__card {
+    display: block;
+    margin-right: 30px;
 width: 100%;
     flex-basis: calc((100% - 30px * 4) /2);
     padding-bottom: 30px;
     
-&:not(:last-child) {
-        margin-bottom: 30px;
-    }
 }}
 @media screen and (min-width:1200px){
 .team__card {
@@ -37,7 +42,7 @@ width: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 
 .team__prof {

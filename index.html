@@ -89,7 +89,7 @@
 </div>
     </header> 
     <!-- hero section 1 -->
-   <<main>
+   <main>
         <section class="hero">
             <div class="conteiner">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
@@ -97,8 +97,8 @@
             <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
         </section> 
-        <!--идеи секция 2 -->
-        <<section class="section">
+    <!--идеи секция 2 -->
+        <section class="section">
             <div class="conteiner">
             <h2  class="section-titlemain visually-hidden">черты характера</h2>
             <ul class="idea-list cc list">
@@ -150,22 +150,45 @@
         </div>
         </section>
         <!--чем мы занимаемся секция -->
-     <!--<section class="section section__nopuddingtop">
-            <div class="conteiner">
+     <section class="section section__nopuddingtop wedoing__none">
+            <div class="conteiner ">
             <h2 class="section__titlemain ">Чем мы занимаемся</h2> 
              
             <ul class="wedoing list">
-                <li class="wedoing__item "><img class="img" src="./images/img.png" alt="печатают на клавиатуре с планшетом" width="370" height="294">
+                <li class="wedoing__item ">
+                    <picture class="img">
+                        <source srcset="./images/dowing/img.webp 1x" media="(min-width: 370px)" type="image/webp">
+                    
+                        <source srcset="./images/dowing/img.jpg 1x, ./images/dowing/img@2x.jpg 2x" src="./images/dowing/img.jpg"
+                            type="image/jpeg">
+                        <img src="./images/dowing/img.jpg" alt="печатают на клавиатуре с планшетом" />
+                    </picture>
+                
                     <div class="wedoing__box">
                         <h3 class="section__title title-wite">Десктопные приложения</h3>
                     </div>
                 </li>
-                <li class="wedoing__item"><img class="img" src="./images/img(2).png" alt="печатают на телефоне и ноутбуке" width="370" height="294">
+                <li class="wedoing__item">
+                <picture class="img">
+                    <source srcset="./images/dowing/img2.webp 1x" media="(min-width: 370px)" type="image/webp">
+                
+                    <source srcset="./images/dowing/img2.jpg 1x, ./images/dowing/img2@2x.jpg 2x" src="./images/dowing/img2.jpg"
+                        type="image/jpeg">
+                    <img src="./images/dowing/img2.jpg" alt="печатают на телефоне и ноутбуке" />
+                </picture>
+                    
                 <div class="wedoing__box">
                     <h3 class="section__title title-wite">Мобильные приложения</h3>
                 </div>
                 </li>
-                <li class="wedoing__item"><img class="img" src="./images/img(3).png" alt="на планшете выбирает цвета из палитры" width="370" height="294">
+                <li class="wedoing__item">
+                    <picture class="img">
+                        <source srcset="./images/dowing/img3.webp 1x" media="(min-width: 370px)" type="image/webp">
+                    
+                        <source srcset="./images/dowing/img3.jpg 1x, ./images/dowing/img3@2x.jpg 2x" src="./images/dowing/img3.jpg"
+                            type="image/jpeg">
+                        <img src="./images/dowing/img3.jpg" alt="на планшете выбирает цвета из палитры" />
+                    </picture>
                 <div class="wedoing__box">
                     <h3 class="section__title title-wite">Дизайнерские решения</h3>
                 </div>
@@ -184,18 +207,15 @@
                      <source
                     srcset="./images/team/man.webp 1x"
                     src="./images/team/man.webp" 
-                    alt="мужчина в очках с бородой очень доволен" 
-media="(min-width: 370px)"
+                    media="(min-width: 370px)"
                     type="image/webp"
                     > 
                     <source
                     srcset="./images/team/man.jpg 1x, ./images/team/man@2x.jpg 2x"
                     src="./images/team/man.jpg" 
-                    alt="мужчина в очках с бородой очень доволен" 
-                    width="270" height="260"
-                    type="image/webp"
+                    type="image/jpeg"
                     >
-                  
+                    <img src="./images/team/man.jpg" alt="мужчина в очках с бородой очень доволен" />
                  </picture>
                     <div class="team__meta">
                     <h3 class="section__title team__title-center">Игорь Демьяненко</h3>
@@ -233,11 +253,16 @@ media="(min-width: 370px)"
                     </div>
             </li>
                 <li class="team__card">
-                    <img class="img" 
-                    srcset="./images/team/women.jpg 1x, ./images/team/women@2x.jpg 2x"
-                    src="./images/team/women.jpg" 
-                    alt="женщина блондинка в очках улыбается" 
-            >
+                <picture class="img">
+                    <source srcset="./images/team/women.webp 1x" 
+                    media="(min-width: 370px)"
+                    type="image/webp">
+
+                    <source srcset="./images/team/women.jpg 1x, ./images/team/women@2x.jpg 2x" src="./images/team/women.jpg"
+                     type="image/jpeg">
+                    <img src="./images/team/women.jpg" alt="женщина блондинка в очках улыбается" />
+                </picture>
+            
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Ольга Репина</h3>
                    <p lang="en" class="team__prof"> Frontend Developer</p>
@@ -274,10 +299,14 @@ media="(min-width: 370px)"
                 </div>
                 </li>
                 <li class="team__card">
-                    <img class="img"
-                    srcset="./images/team/man2.jpg 1x, ./images/team/man2@2x.jpg"
-                     src="./images/team/man2.jpg" 
-                     alt="русоволосый мужчина без бороды улыбается">
+                    <picture class="img">
+                        <source srcset="./images/team/man2.webp 1x" media="(min-width: 370px)" type="image/webp">
+                    
+                        <source srcset="./images/team/man2.jpg 1x, ./images/team/man2@2x.jpg 2x" src="./images/team/man2.jpg"
+                            type="image/jpeg">
+                        <img src="./images/team/man2.jpg" alt="русоволосый мужчина без бороды улыбается" />
+                    </picture>
+            
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Николай Тарасов</h3>
                     <p lang="en" class="team__prof">Marketing</p>
@@ -315,11 +344,13 @@ media="(min-width: 370px)"
                 </div>
             </li>
                 <li class="team__card">
-                    <img class="img"
-                    srcset="./images/team/man3.jpg 1x, ./images/team/man3@2x.jpg" 
-                    src="./images/team/man3.jpg" 
-                    alt="мужчина брюнет в очках с бородой улыбается,доволен"
-                 >
+<picture class="img">
+    <source srcset="./images/team/man3.webp 1x" media="(min-width: 370px)" type="image/webp">
+
+    <source srcset="./images/team/man3.jpg 1x, ./images/team/man3@2x.jpg 2x" src="./images/team/man3.jpg"
+        type="image/jpeg">
+    <img src="./images/team/man3.jpg" alt="мужчина брюнет в очках с бородой улыбается,доволен" />
+</picture>
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Михаил Ермаков</h3>
                     <p lang="en" class="team__prof">UI Designer</p>
@@ -467,7 +498,7 @@ media="(min-width: 370px)"
 </ul>
 </div>
 <!-- form -->
-<<form class="form-footer" >
+<form class="form-footer" >
 <p class="  social-end__title"> Подпишитесь на рассылку</p>
 <div class="form-footer__conteiner" role="group">
 <label for="email-footer" class="form-footer__lable"></label>
@@ -483,7 +514,7 @@ media="(min-width: 370px)"
 </div>
     </footer>
     <!-- modal -->
-<!-- <div class="backdrope is-hidden" data-modal>
+< <div class="backdrope is-hidden" data-modal>
         <div class="modal">
            <form  class="form-modal"> 
     <p id="contact-details-head"> Оставьте свои данные, мы вам перезвоним</p>

@@ -1,11 +1,36 @@
+
+@media screen and (max-width:768px){
 .button-list {
+        display:flex;
+         justify-content: flex-start;
+}
+
+/*&:not(:nth-last-child(odd)) {
+    margin-right: 30px;
+}*/
+.button-list__item {
+margin-right: 8px;}
+/*
+&:not(:last-child) {
+    margin-right: 8px;}
+flex-basis: calc((100% - 8px * 3) /3);
+}*/
+.new-string {
+flex-basis: 100%;
+width: 0;
+}
+}
+
+
+
+/*.button-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
 /*button portfolio*/
-.button-list__stud {
+.button-list__btn {
     padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
@@ -28,7 +53,7 @@
 }
 
 }
-
-.button-list__line:not(:last-child) {
+/*
+.button-list__item:not(:last-child) {
     margin-right: 8px;
-}
+}*/

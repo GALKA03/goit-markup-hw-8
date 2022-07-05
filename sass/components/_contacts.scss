@@ -84,6 +84,9 @@ color: var(--primery-text-color);
         .mrg-left {
             margin-left: 0;
         }
+                .contacts__item{
+                    margin-bottom: 10px;
+                }
 }
 @media screen and (min-width:1200px){
     .contacts {

@@ -1,5 +1,10 @@
 @media screen and (max-width:768px){
-   
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+}
     .client__item{
    width: 100%;
 flex-basis: calc((100% - 30px * 4) /2);

@@ -1,3 +1,14 @@
+@media screen and (max-width:1200px){
+    .wedoing__none{
+     display: none;   
+    }
+
+
+}
+
+
+@media screen and (min-width:1200px){
+
 .section__nopuddingtop {
     display: block;
     padding-top: 0;
@@ -32,4 +43,4 @@
 }
 .title-wite{
     color: var(--bacground-font-waight);
-}
+}}
