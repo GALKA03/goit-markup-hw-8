@@ -14,7 +14,7 @@
     font-style: normal;
 }
 .footer__address{
-    
+        font-style: normal;
     margin-top: 20px;
 }
 .footer__list{
@@ -47,6 +47,9 @@ display: flex;
     font-style: normal;
     
 }
+.social-end {
+    margin-left: auto;
+}
 .social-end__list {
             display: flex;
         }
@@ -57,6 +60,8 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
+.footer__address {
+    font-style: normal;}
 }
 
 @media screen and (min-width:1200px){

@@ -393,6 +393,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .form-footer {
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -411,6 +412,10 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--color-bacgraund-hovfut);
+  }
+
+  .form-footer__lable {
+    width: 450px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -435,6 +440,12 @@ img {
     justify-content: center;
     background-color: var(--color-bacgraund-hovfut);
   }
+
+  .social-end__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-footer__emeil {
@@ -450,11 +461,11 @@ img {
   .form-footer {
     margin-left: 93px;
   }
-
-  .form-footer__icon {
-    margin-left: 10px;
-  }
 }
+.form-footer__icon {
+  margin-left: 10px;
+}
+
 .form-footer__emeil {
   width: 100%;
   height: 50px;
@@ -642,6 +653,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .mobile-conteiner {
+    overflow-y: scroll;
     position: fixed;
     top: 0;
     left: 0;
@@ -674,15 +686,20 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
+    width: 100%;
+    height: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+
+  .mobil-menu__conteiner {
+    padding-left: 25px;
   }
 
   .mobil-social {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 44px;
   }
 
@@ -703,8 +720,8 @@ img {
   .mobil-social__link::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: -30px;
     display: block;
     width: 22px;
     height: 2px;
@@ -729,8 +746,8 @@ img {
     padding-left: 25px;
   }
 
-  .mobil-menu__item:not(:last-child) {
-    margin-bottom: 32px;
+  .mobil-menu__item {
+    font-weight: 500;
   }
 
   .mobil-menu__link {
@@ -779,6 +796,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .form-footer {
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -797,6 +815,10 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--color-bacgraund-hovfut);
+  }
+
+  .form-footer__lable {
+    width: 450px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -821,6 +843,12 @@ img {
     justify-content: center;
     background-color: var(--color-bacgraund-hovfut);
   }
+
+  .social-end__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-footer__emeil {
@@ -836,11 +864,11 @@ img {
   .form-footer {
     margin-left: 93px;
   }
-
-  .form-footer__icon {
-    margin-left: 10px;
-  }
 }
+.form-footer__icon {
+  margin-left: 10px;
+}
+
 .form-footer__emeil {
   width: 100%;
   height: 50px;
@@ -1382,6 +1410,7 @@ img {
   }
 
   .footer__address {
+    font-style: normal;
     margin-top: 20px;
   }
 
@@ -1415,6 +1444,10 @@ img {
     font-style: normal;
   }
 
+  .social-end {
+    margin-left: auto;
+  }
+
   .social-end__list {
     display: flex;
   }
@@ -1425,6 +1458,10 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .footer__address {
+    font-style: normal;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1600,6 +1637,7 @@ img {
 @media screen and (min-width: 768px) {
   .project-cards__item {
     display: flex;
+    justify-content: flex-start;
     background-color: var(--bacground-font-waight);
     width: 100%;
     flex-basis: calc((100% - 120px) / 2);

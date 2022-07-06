@@ -1,5 +1,6 @@
 @media screen and (max-width:768px){
 .form-footer {
+    width: 450px;
 display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -17,6 +18,10 @@ display: flex;
                     justify-content: center;
                     background-color: var(--color-bacgraund-hovfut);
                 }
+  .form-footer__lable{
+    width: 450px;
+  }
+  
 }
 @media screen and (max-width:1200px){
 .form-footer {
@@ -40,6 +45,11 @@ display: flex;
             justify-content: center;
             background-color: var(--color-bacgraund-hovfut);
         }
+                .social-end__title{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 }
 
 @media screen and (min-width:1200px){
@@ -55,11 +65,11 @@ display: flex;
     margin-left: 93px;
 
 }
+
+}
 .form-footer__icon {
     margin-left: 10px;
 }
-}
-
 .form-footer__emeil {
     width: 100%;
     height: 50px;

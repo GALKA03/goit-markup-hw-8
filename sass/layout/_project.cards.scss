@@ -10,6 +10,7 @@
 @media screen and (min-width:768px){
 .project-cards__item {
         display:flex;
+        justify-content: flex-start;
         background-color: var(--bacground-font-waight);
         width: 100%;
             flex-basis: calc((100% - 30px * 4) /2);
