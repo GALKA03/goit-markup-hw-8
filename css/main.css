@@ -24,11 +24,11 @@
   overflow: hidden;
 }
 
-.list {
+ul {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -878,7 +878,7 @@ img {
   width: 100%;
   border-bottom: 1px solid rgb(236, 236, 236);
   background-color: var(--bacground-font-waight);
-  padding: 16px 15px;
+  padding: 21px 15px;
 }
 
 .header__correct {
