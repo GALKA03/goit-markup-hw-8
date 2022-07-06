@@ -15,7 +15,7 @@ margin-right: 30px;
     margin-bottom: 30px;
  }
 }}
-@media screen and (max-width:1200px){
+@media screen and (min-width:768px){
 
 .client__item {
         width: 100%;
@@ -38,13 +38,18 @@ margin-right: 30px;
         }
 }
 @media screen and (min-width:1200px){
-.client__item:not(:last-child) {
+.client__item{
+    margin-bottom: 0;
+    &:not(:last-child) {
             margin-right: 30px;
+            
         }
+}
+
 .clients {
 display: flex;               
-align-items: center;
-
+align-items: baseline;
+flex-wrap: nowrap;
     }}
 /*
   .clients {

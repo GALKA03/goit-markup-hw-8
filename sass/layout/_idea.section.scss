@@ -26,8 +26,9 @@
  .idea-list__item {
 width: 100%;
 flex-basis: calc((100% - 30px * 4) /2);
-margin-right: 30px;
-    &:nth-child(-n+3) {
+&:nth-child(odd){
+    margin-right: 30px;}
+    &:nth-child(-n+2) {
         margin-bottom: 30px;
     }
 }}
@@ -39,7 +40,12 @@ flex-basis:calc((100% - 30px * 4) /4);
 &:not(:last-child) {
 margin-right: 30px;
 }}
-
+.idea-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
 }
 .idea-list__conteiner {
     display: flex;

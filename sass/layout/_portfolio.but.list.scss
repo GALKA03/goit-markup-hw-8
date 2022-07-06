@@ -2,14 +2,28 @@
 @media screen and (max-width:768px){
 .button-list {
         display:flex;
+        flex-wrap: wrap;
          justify-content: flex-start;
+         margin-bottom: 40px;
 }
 
+}
+@media screen and (min-width:768px){
+.button-list{  
+display: flex;
+margin-bottom: 30px;
+justify-content: center;
+}
+}
 /*&:not(:nth-last-child(odd)) {
     margin-right: 30px;
 }*/
 .button-list__item {
-margin-right: 8px;}
+margin-right: 8px;
+&:nth-child(-n+3){
+margin-bottom: 15px;
+}
+}
 /*
 &:not(:last-child) {
     margin-right: 8px;}
@@ -19,7 +33,7 @@ flex-basis: calc((100% - 8px * 3) /3);
 flex-basis: 100%;
 width: 0;
 }
-}
+
 
 
 

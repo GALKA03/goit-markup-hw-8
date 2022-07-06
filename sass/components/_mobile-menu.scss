@@ -9,6 +9,7 @@
         height: 100%;
         background-color: var(--bacground-font-waight);
         opacity: 0;
+    z-index: 1;
         visibility: hidden;
         pointer-events: none;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,15 +24,14 @@
 
     .mobile-conteiner__close-btn {
         position: absolute;
-        top: 10px;
-        right: 15px;
+        top: 21px;
+        right: 25px;
         border: none;
         background-color: transparent;
-        height: 40px;
-        width: 40px;
     }
 
     .mobile-conteiner__dop {
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -46,15 +46,15 @@ height:100% ;
     .mobil-social {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        margin-top: 44px;  
+        justify-content: flex-start;
+margin-right: 68px;
+        margin-top: 64px;  
     }
 
     .mobil-social__item {
         position: relative;
      &:not(:last-child) {
-            margin-right: 20px;
+            margin-right:20px;
         } 
         }
     .mobil-social__link{
@@ -68,7 +68,7 @@ height:100% ;
             content: "";
             position: absolute;
             top:10px;
-           right: -30px;
+           right: -20px;
             display: block;
             width: 22px;
             height: 2px;
@@ -76,19 +76,11 @@ height:100% ;
             transform: rotate(90deg);
     }}
 
-    /*.mobil-menu__item::after{
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    display: block;
-        position: absolute;
-        content: "";
-        width:0 ;
-        height: 22;
-        left: 0;
-        bottom:0;
-        background-color: var(--primery-text-color);
-        
-        transition: opacity 250ms
-}*/
+.mobile-conteiner__icon:hover,
+.mobile-conteiner__icon:focus
+{
+fill: var(--color-logo);
+}
     .mobil-menu {
         padding-left: 25px;
     }
