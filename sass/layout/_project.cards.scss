@@ -13,12 +13,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-grow: 1;
-    translateY(101%);
 }
 
     .project-cards__item {
         display:flex;
-
         background-color: var(--bacground-font-waight);
         width: 100%;
             flex-basis: calc((100% - 30px * 4) /2);
@@ -32,6 +30,7 @@ margin-bottom: 30px;
 }
 @media screen and (min-width:1200px){
 .project-cards__item {
+    flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
         background-color: var(--bacground-font-waight);

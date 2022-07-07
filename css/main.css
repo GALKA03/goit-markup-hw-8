@@ -1062,6 +1062,7 @@ img {
 @media screen and (min-width: 1200px) {
   .idea-list__item {
     flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0;
   }
   .idea-list__item:not(:last-child) {
     margin-right: 30px;
@@ -1674,7 +1675,6 @@ flex-basis: calc((100% - 8px * 3) /3);
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-grow: 1;
-    translate-y: 101%;
   }
 
   .project-cards__item {
@@ -1692,6 +1692,7 @@ flex-basis: calc((100% - 8px * 3) /3);
 }
 @media screen and (min-width: 1200px) {
   .project-cards__item {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--bacground-font-waight);

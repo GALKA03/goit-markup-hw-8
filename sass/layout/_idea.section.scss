@@ -36,7 +36,7 @@ flex-basis: calc((100% - 30px * 4) /2);
 {
 .idea-list__item{ 
 flex-basis:calc((100% - 30px * 4) /4);
-
+margin-bottom: 0;
 &:not(:last-child) {
 margin-right: 30px;
 }}
