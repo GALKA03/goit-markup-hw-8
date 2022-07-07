@@ -1,17 +1,8 @@
 
 @media screen and (max-width:768px){
 .hero{
-   height: 100%;
-        padding-top: 118px;
-        padding-bottom: 118px;
-        text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../images/hero-mob-1.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: var(--color-bacgraund-hovfut);
-        color: var(--bacground-font-waight);
+            url('./images/hero/img-hero-mobile.jpg');
     }
     .hero__title{
     font-weight: 900;
@@ -20,18 +11,19 @@
         text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
 }
 }
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero{
+.hero{
         background-image:
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url("../images/hero-mob@2x.jpg");
+         url("../images/hero/img-hero-mobile@2x.jpg");
     }
 }
+
 @media screen and (min-width:768px){
     .hero__title {
             font-weight: 900;
@@ -43,66 +35,60 @@
             margin-bottom: 40px;
 }
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-tab1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--color-bacgraund-hovfut);
-    color: var(--bacground-font-waight);
+        url('./images/hero/img-hero-tablet.jpg');
 }
-
-}
-/*@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image: url("../images/hero-tab@2x.jpg");
-    }
-}*/
-@media screen and (min-width:1200px){
-.hero {
-   
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 200px 0;
-    text-align: center;
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-mob-1.jpg');
-    background-position: center;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    background-color: var(--color-bacgraund-hovfut);
-    color: var(--bacground-font-waight);
-    position: relative;
 }
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
         background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/hero-komp@2x.jpg");
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/img-hero-tablet@2x.jpg");
     }
 }
+@media screen and (min-width:1200px){
+.hero {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 200px 0;
+    text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/img-hero-desktop.jpg');
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/img-hero-desktop@2x.jpg");
+    }}
 .hero__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
-    text-align: center;
+text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--bacground-font-waight);
-};}
+}
+.hero {
+    height: 100%;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-bacgraund-hovfut);
+    color: var(--bacground-font-waight);
+}

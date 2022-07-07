@@ -1,55 +1,25 @@
 @media screen and (max-width:768px){
 .form-footer {
-    width: 450px;
-display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:100%;
+display: inline-block; 
     }
-        .form-footer__button{
-            margin-top: 20px;
-        }
-                .form-footer__conteiner {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: var(--color-bacgraund-hovfut);
-                }
+       
   .form-footer__lable{
-    width: 450px;
+    width:100%;
   }
-  
+  .social-end__title {
+      text-align: center;
+  }
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and (max-width:1199px)
+{
 .form-footer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 450px;
+    width: 358px;
         margin-left: auto;
         margin-right: auto;
-
     }
-
-    .form-footer__button {
-        margin-top: 20px;
-        min-width: 0;
-    }
-        .form-footer__conteiner {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--color-bacgraund-hovfut);
-        }
                 .social-end__title{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                text-align: center;
                 }
 }
 
@@ -59,14 +29,8 @@ display: flex;
 }
 .form-footer__conteiner {
     display: flex;
-    align-items: baseline;
     background-color: var(--color-bacgraund-hovfut);
 }
-.form-footer {
-    margin-left: auto;
-
-}
-
 }
 .form-footer__icon {
     margin-left: 10px;
@@ -82,3 +46,11 @@ display: flex;
     background-color: var(--color-bacgraund-hovfut);
     color: var(--bacground-font-waight);
 }
+ .form-footer__conteiner {
+     background-color: var(--color-bacgraund-hovfut);
+ }
+  .form-footer__button {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+  }

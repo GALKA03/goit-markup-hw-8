@@ -41,8 +41,8 @@
             </svg>
             info@devstudio.com
          </a></li>
-        <li class="contacts__item mrg-left">
-            <a href="tel:+380961111111" class="contacts__linkphon link">
+        <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__linkphon">
             <svg width="12" height="16" class="contakts__icons">
                     <use class="contacts__use" href="./images/sprite.svg#icon-smartphonopt" ></use>
                 </svg>
@@ -205,16 +205,21 @@
             <ul class="team">
                 <li class="team__card">
                    <picture class="img">
-                     <source
-                    srcset="./images/team/man.webp 1x" 
-                    media="(min-width: 370px)"
-                    type="image/webp"
-                    > 
-                    <source
-                    srcset="./images/team/man.jpg 1x, ./images/team/man@2x.jpg 2x"
-                    type="image/jpeg"
-                    >
-                    <img src="./images/team/man.jpg" alt="мужчина в очках с бородой очень доволен" />
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/demian-mobile.webp 1x,./images/team/demian-mobile@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/demian-mobile.jpg 1x,./images/team/demian-mobile@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                        srcset="./images/team/demian-tablet.webp 1x,./images/team/demian-tablet@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)"
+                        srcset="./images/team/demian-tablet.jpg 1x, ./imagesteam/demian-tablet@2x.jpg 2x" />
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/demian-desktop.webp 1x,./images/team/demian-desktop@2x.webp 2x"
+                        type="image/webp" />
+                    <source media="(min-width: 480px)"
+                        srcset="./images/team/demian-desktop.jpg 1x, ./images/team/demian-desktop@2x.jpg 2x" />
+
+                    <img src="./images/team/demian-desktop.jpg" alt="мужчина в очках с бородой очень доволен" />
                  </picture>
                     <div class="team__meta">
                     <h3 class="section__title team__title-center">Игорь Демьяненко</h3>
@@ -253,13 +258,18 @@
             </li>
                 <li class="team__card">
                 <picture class="img">
-                    <source srcset="./images/team/women.webp 1x" 
-                    media="(min-width: 370px)"
-                    type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images/team/repina-mobile.webp 1x,./images/team/repina-mobile@2x.webp 2x"
+                            type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="./images/team/repina-mobile.jpg 1x,./images/team/repina-mobile@2x.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/team/repina-tablet.webp 1x,./images/team/repina-tablet@2x.webp 2x"
+                            type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="./images/team/repina-tablet.jpg 1x, ./imagesteam/repina-tablet@2x.jpg 2x" />
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/repina-desktop.webp 1x,./images/team/repina-desktop@2x.webp 2x" type="image/webp" />
+                        <source media="(min-width: 480px)"
+                            srcset="./images/team/repina-desktop.jpg 1x, ./images/team/repina-desktop@2x.jpg 2x" />
 
-                    <source srcset="./images/team/women.jpg 1x, ./images/team/women@2x.jpg 2x" 
-                     type="image/jpeg">
-                    <img src="./images/team/women.jpg" alt="женщина блондинка в очках улыбается" />
+                    <img src="./images/team/repina-desktop.jpg" alt="женщина блондинка в очках улыбается" />
                 </picture>
             
                     <div class="team__meta">
@@ -299,11 +309,18 @@
                 </li>
                 <li class="team__card">
                     <picture class="img">
-                        <source srcset="./images/team/man2.webp 1x" media="(min-width: 370px)" type="image/webp">
-                    
-                        <source srcset="./images/team/man2.jpg 1x, ./images/team/man2@2x.jpg 2x" 
-                            type="image/jpeg">
-                        <img src="./images/team/man2.jpg" alt="русоволосый мужчина без бороды улыбается" />
+                                        <source media="(min-width: 1200px)" srcset="./images/team/tarasov-mobile.webp 1x,./images/team/tarasov-mobile@2x.webp 2x"
+                                            type="image/webp" />
+                                        <source media="(min-width: 1200px)" srcset="./images/team/tarasov-mobile.jpg 1x,./images/team/tarasov-mobile@2x.jpg 2x" />
+                                        <source media="(min-width: 768px)" srcset="./images/team/tarasov-tablet.webp 1x,./images/team/tarasov-tablet@2x.webp 2x"
+                                            type="image/webp" />
+                                        <source media="(min-width: 768px)" srcset="./images/team/tarasov-tablet.jpg 1x, ./imagesteam/tarasov-tablet@2x.jpg 2x" />
+                                        <source media="(min-width: 1200px)"
+                                            srcset="./images/team/tarasov-desktop.webp 1x,./images/team/tarasov-desktop@2x.webp 2x" type="image/webp" />
+                                        <source media="(min-width: 480px)"
+                                            srcset="./images/team/tarasov-desktop.jpg 1x, ./images/team/tarasov-desktop@2x.jpg 2x" />
+
+                        <img src="./images/team/tarasov-desktop.jpg" alt="русоволосый мужчина без бороды улыбается" />
                     </picture>
             
                     <div class="team__meta">
@@ -344,11 +361,18 @@
             </li>
                 <li class="team__card">
 <picture class="img">
-    <source srcset="./images/team/man3.webp 1x" media="(min-width: 370px)" type="image/webp">
+        <source media="(min-width: 1200px)" srcset="./images/team/ermakov-mobile.webp 1x,./images/team/ermakov-mobile@2x.webp 2x"
+            type="image/webp" />
+        <source media="(min-width: 1200px)" srcset="./images/team/ermakov-mobile.jpg 1x,./images/team/ermakov-mobile@2x.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="./images/team/ermakov-tablet.webp 1x,./images/team/ermakov-tablet@2x.webp 2x"
+            type="image/webp" />
+        <source media="(min-width: 768px)" srcset="./images/team/ermakov-tablet.jpg 1x, ./imagesteam/ermakov-tablet@2x.jpg 2x" />
+        <source media="(min-width: 1200px)"
+            srcset="./images/team/ermakov-desktop.webp 1x,./images/team/ermakov-desktop@2x.webp 2x" type="image/webp" />
+        <source media="(min-width: 480px)"
+            srcset="./images/team/ermakov-desktop.jpg 1x, ./images/team/ermakov-desktop@2x.jpg 2x" />
 
-    <source srcset="./images/team/man3.jpg 1x, ./images/team/man3@2x.jpg 2x"
-        type="image/jpeg">
-    <img src="./images/team/man3.jpg" alt="мужчина брюнет в очках с бородой улыбается,доволен" />
+    <img src="./images/team/ermakov-desktop.jpg" alt="мужчина брюнет в очках с бородой улыбается,доволен" />
 </picture>
                     <div class="team__meta">
                         <h3 class="section__title team__title-center">Михаил Ермаков</h3>
