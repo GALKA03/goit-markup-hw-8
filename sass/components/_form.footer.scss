@@ -13,6 +13,10 @@ display: inline-block;
 }
 @media screen and (min-width:768px) and (max-width:1199px)
 {
+    .social-end__title {
+            text-align: end;
+    
+        }
 .form-footer {
     width: 358px;
         margin-left: auto;
@@ -24,11 +28,18 @@ display: inline-block;
 }
 
 @media screen and (min-width:1200px){
+.social-end__margin-left{
+    margin-left: 220px
+}
+    .form-footer {
+            display:block
+        }
 .form-footer__lable {
         width: 358px;
 }
 .form-footer__conteiner {
     display: flex;
+    align-items: baseline;
     background-color: var(--color-bacgraund-hovfut);
 }
 }
