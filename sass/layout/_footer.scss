@@ -27,6 +27,7 @@
 .footer__address{
     margin-top: 20px;
     font-style: normal;
+    margin-bottom: 50px;
 }
 
 .footer__list {
@@ -54,7 +55,7 @@ text-align: center;
 .footer__item {
     text-align: center;
 .footer-conteiner__contacts{
-    margin-bottom: 52px;
+    margin-bottom: 50px;
 }
 }}
 
@@ -67,14 +68,15 @@ text-align: center;
         color: var(--bacground-font-waight);
     }
     .footer-conteiner {
+   
         display: flex;
+        justify-content: space-between;
         align-items: baseline;
 margin-right: 70px;
     }
 
     .footer-conteiner__contacts {
         font-style: normal;
-
     }
 
 .footer__list {
@@ -82,10 +84,13 @@ margin-right: 70px;
 }
 .footer__item {
     text-align: start;
-}}
-.footer-conteiner__contacts {
-    margin-bottom: 60px;
-    font-style: normal;
+
+    .footer__address {
+            margin-top: 20px;
+            font-style: normal;
+        }
+}
+
 }
 .footer__web {
 

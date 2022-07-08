@@ -10,10 +10,10 @@
 .project-cards{
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+  
 }
     .project-cards__item {
-        
+        flex-grow: 1;
         display:flex;
         background-color: var(--bacground-font-waight);
         width: 100%;
