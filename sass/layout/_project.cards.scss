@@ -13,7 +13,6 @@
   
 }
     .project-cards__item {
-        flex-grow: 1;
         display:flex;
         background-color: var(--bacground-font-waight);
         width: 100%;
@@ -29,11 +28,9 @@ margin-bottom: 30px;
 @media screen and (min-width:1200px){
     .project-cards {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
         }
 .project-cards__item {
-        flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
         background-color: var(--bacground-font-waight);
@@ -48,8 +45,12 @@ margin-bottom: 30px;
             margin-right: 30px;
         }
 
+    
+ 
     }
-    .project-cards__link {
+
+}
+   .project-cards__link {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -60,11 +61,7 @@ margin-bottom: 30px;
         &:hover .text-hidden,
         &:focus .text-hidden {
             transform: translateY(0);
-        }
-    }
-
-}
-
+        }}
 .project-cards__bottom {
     flex-grow: 1;
     display: block;
