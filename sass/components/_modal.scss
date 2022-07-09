@@ -13,7 +13,13 @@
                 transform: translate(-50%, -50%) scale(0.5);
 }
 
-}}
+}
+.form-modal__checboxlable{
+font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+}
 @media screen and (min-width:1200px){
    .modal {
     display: block;
@@ -30,7 +36,13 @@
     transform: translate(-50%, -50%) scale(0.5);
 }}
 
-  
+  .form-modal__checboxlable,
+  .form-modal__checklink
+  {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+  }
 } 
 
 .button-close {

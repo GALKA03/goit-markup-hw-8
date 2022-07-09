@@ -39,18 +39,8 @@
         color: #757575; 
 }*/
 
-.section__title {
-    text-align: center;
-        margin-bottom: 10px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.1;
-        letter-spacing: 0.03em;
-        color: var(--title-text-color);
-    }
-
-
     .section__title{  
+        align-items: center;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -79,6 +69,4 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.section__title {
-    text-align: start;
-}}
+}

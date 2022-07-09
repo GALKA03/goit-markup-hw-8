@@ -16,14 +16,18 @@
 .footer__web {
     color: var(--color-logo);
 }
-.footer__list{
-    margin-top: 20px;}
+
 .social-end__list {
     display: flex;
     justify-content: center;
 }
 .footer__address{
+    margin-top: 20px;
     font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.03em;
 }
 .social-end__link {
     display: flex;
@@ -86,7 +90,9 @@
     line-height: 24px;
     color: var(--footer-mail-telefon);
 }
-
+.footer__item:not(:last-child){
+margin-bottom: 8px;
+}
 @media screen and (max-width:768px){
 
    .social-end{
@@ -117,12 +123,15 @@
             flex-wrap:nowrap;
   }
   .social-end{
-margin-right: 92px;
+margin-right: 93px;
   }
  
   .footer-conteiner__contacts{
     margin-right: 70px;
     margin-bottom: 0;
+  }
+  .footer__item:not(:last-child) {
+      margin-bottom: 9px;
   }
 }
 
