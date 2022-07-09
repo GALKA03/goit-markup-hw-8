@@ -1409,6 +1409,10 @@ button {
   justify-content: center;
 }
 
+.footer__address {
+  font-style: normal;
+}
+
 .social-end__link {
   display: flex;
   align-items: center;
