@@ -69,6 +69,7 @@
 .form-modal__checboxlable {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-items: center;
     position: relative;
 
@@ -116,3 +117,9 @@
     color: var(--title-text-color);
 }  
 }
+@media screen and (min-width:350px){ 
+    .form-modal__checklink{  
+        flex-wrap:nowrap; 
+    }
+    
+    }

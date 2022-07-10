@@ -547,6 +547,7 @@ button {
 .form-modal__checboxlable {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-items: center;
   position: relative;
   font-size: 14px;
@@ -594,6 +595,11 @@ button {
 }
 
 @media screen and (min-width: 350px) {
+  .form-modal__checklink {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 350px) {
   .modal {
     display: block;
     position: absolute;
@@ -606,12 +612,6 @@ button {
   }
   .backdrope.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
-  }
-
-  .form-modal__checboxlable {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
