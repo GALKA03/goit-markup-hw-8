@@ -551,7 +551,7 @@ button {
   justify-items: center;
   position: relative;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   cursor: pointer;
@@ -595,8 +595,16 @@ button {
 }
 
 @media screen and (min-width: 350px) {
-  .form-modal__checklink {
-    flex-wrap: nowrap;
+  .form-modal__checkspan {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .form-modal__checboxlable {
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 }
 @media screen and (min-width: 350px) {
