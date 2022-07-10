@@ -876,7 +876,7 @@ button {
 /*---------mobil-menu========*/
 @media screen and (max-width: 768px) {
   .header {
-    padding: 10px 15px;
+    padding: 9.5px 15px;
   }
 
   .mob-menu-open-btn {
