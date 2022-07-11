@@ -523,11 +523,6 @@ button {
   border-color: var(--color-logo);
 }
 
-.form-modal__checklink {
-  flex-wrap: nowrap;
-  text-decoration: var(--color-logo);
-}
-
 .form-modal__checkspan {
   font-size: 14px;
   line-height: 1.7;
