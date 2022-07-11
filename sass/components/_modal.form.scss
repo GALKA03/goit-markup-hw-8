@@ -55,6 +55,7 @@
 }
 
 .form-modal__checklink {
+    flex-wrap: nowrap;
     text-decoration: var(--color-logo);
 }
 
@@ -97,6 +98,7 @@
 }
 }
 .form-modal {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,3 +131,4 @@ font-size: 12px;
          }
  
   }
+  

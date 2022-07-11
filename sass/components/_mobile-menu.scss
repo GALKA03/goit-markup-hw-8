@@ -90,6 +90,7 @@ fill: var(--color-logo);
 
     
 .mobil-menu__item{ 
+   
         font-weight: 500;
  margin-bottom: 35px;
     }
@@ -108,7 +109,14 @@ fill: var(--color-logo);
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
-
+.mob-menu__current {
+    color: var(--color-logo);
+    &:hover{
+     opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+    }
+   
+}
     .mobil-contacts {
         padding-left: 25px;
     }
