@@ -44,13 +44,16 @@ height:100% ;
         padding-bottom: 48px;
     }
 .mobil-menu__conteiner{
-     padding-left: 25px;
+     padding-left: 20px;
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
 }
     .mobil-social {
         display: flex;
         align-items: center;
-margin-right: 68px;
         margin-top: 64px;  
+        padding-right: 0;
     }
 
     .mobil-social__item {
