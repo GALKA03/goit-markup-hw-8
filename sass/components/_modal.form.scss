@@ -70,7 +70,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-items: center;
     position: relative;
 
     font-size: 14px;
@@ -117,7 +116,7 @@
     color: var(--title-text-color);
 }  
 }
-@media screen and (min-width:350px){ 
+@media screen and (max-width:1200px){ 
     .form-modal__checkspan{  
 font-size: 12px;
     line-height: 1.1;
@@ -128,4 +127,5 @@ font-size: 12px;
     font-weight: 400;
       letter-spacing: 0.03em;
          }
-    }
+ 
+  }

@@ -107,6 +107,7 @@ margin-bottom: 8px;
 .footer-conteiner{
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-around;
     text-align: center;
 }
@@ -120,6 +121,7 @@ margin-bottom: 8px;
             text-align: start;}
     .footer-conteiner {
             display: flex;
+
             flex-wrap:nowrap;
   }
   .social-end{
@@ -127,6 +129,7 @@ margin-right: 93px;
   }
  
   .footer-conteiner__contacts{
+    flex-grow: 1;
     margin-right: 70px;
     margin-bottom: 0;
   }
